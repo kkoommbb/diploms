@@ -1,0 +1,142 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{graphicx}
+
+\usepackage{array}
+
+\usepackage{soulutf8}
+
+\usepackage{paratype}
+
+\usepackage[a4paper,top=2truecm, left=3truecm, right=3truecm, bottom=1.5truecm]{geometry}
+
+\pagestyle{empty}
+
+\newcounter{stepen}
+
+% \usepackage{datatool}
+% \DTLloaddb{names}{namelist-1.csv}
+
+\usepackage{background}
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=.4,  %% adjust
+contents={\includegraphics[width=\paperwidth,height=\paperheight]{frame.jpg}}
+}
+
+
+\newcommand{\fio}[1]{\textsl{#1}}
+\newcommand{\pok}{\fio{Н.\,В. Походня}\par методист кафедры математики\par ГОБУ <<Физтех-лицей>> им. П.\,Л.\,Капицы}
+\newcommand{\olya}{\fio{О.\,С. Морозова}\par координатор олимпиадного \par движения} 
+\newcommand{\khis}{\fio{И.\,Ш. Хисамбеев}\par тренер параллели 5 классов}
+\newcommand{\morev}{\fio{К.\,В. Морев}\par тренер параллели 6 классов}
+\newcommand{\elis}{\fio{А.\,С. Елисеев}\par тренер параллели 7 классов}
+\newcommand{\sharich}{\fio{В.\,З. Шарич}\par заведующий кафедрой \par математики\par ГОБУ <<Физтех-лицей>> им. П.\,Л.\,Капицы}
+\newcommand{\razor}{\fio{И.\,Н. Барышев}\par тренер параллели 8 классов}
+\newcommand{\razzzzor}{\fio{И.\,Н. Барышев}\par тренер параллели 9 классов}
+\newcommand{\tre}{\fio{В.\,Д. Трещев}\par тренер параллели 10 классов}
+\newcommand{\gleb}{\fio{Г.\,А. Погудин}\par тренер параллели 11 классов}
+\newcommand{\yurpal}{\fio{Ю.\,П. Николаев}\par заместитель директора\par по науке}
+
+
+
+\newcommand{\mlruk}[2]{\setlength{\extrarowheight}{0.5truecm}
+\rule{0pt}{0pt}\hspace{-4em}\begin{tabular}{p{3em}p{45em}p{5em}p{5em}}
+& \pok & & #1\\
+& \sharich & & #2 
+\end{tabular}
+}
+
+
+
+\newcommand{\dip}[5]{%
+\rule{0pt}{0pt}
+
+\begin{center}
+\includegraphics[width=.3\textwidth]{logo_olimp_cr.jpg}
+\end{center}
+
+
+
+
+% \noindent\begin{minipage}{.25\textwidth}
+% \includegraphics[width=.99\textwidth]{logo.jpg}
+% \end{minipage}\hfill
+% \begin{minipage}{.25\textwidth}
+% \includegraphics[width=.99\textwidth]{logo_olimp_cr.jpg}
+% \end{minipage}%
+
+\begin{center}
+
+\scalebox{2}{\Huge\scshape Диплом}
+
+\vspace{2.2em}
+
+
+{\Large \textbf{#2} муниципального этапа}
+
+
+\vspace{.9em}
+
+
+{\Large Всероссийской олимпиады школьников}
+
+\vspace{.9em}
+
+
+{\Large по \hspace{1em} \ul{~~~~~~~~~~~~~\itshape математике ~~~~~~~~~~~~~~`}}
+
+
+
+
+
+
+%\scalebox{1.7}{\Huge\bfseries \setcounter{stepen}{#2}\Roman{stepen}}\scalebox{1.2}{\Huge\hspace{.3em} степени}
+
+\vspace{1.5em}
+
+{\Large  Награждается}
+
+\vspace{1.8em}
+
+{\Huge \itshape \ul{#3}}
+
+\vspace{1.8em}
+
+
+{\Large учащийся (учащаяся) ~~ {\LARGE\itshape #1} ~~ класса }
+
+
+\vspace{2em}
+
+\ul{\hbox{\Large\itshape  ГОБУ <<Физтех-лицей >> им. П.\,Л. Капицы}}
+
+\vspace{1em}
+
+\ul{\hbox{\Large\itshape  г. Долгопрудный, Московская область}}
+
+\vspace{3em}
+
+{\large ~~~~~~~~~~~"{\itshape 28}" ~~ \ul{\itshape декабря} ~~ 20\ul{\itshape 15}\,г. \hfill г. Долгопрудный~~~~~~~~~~~`}
+
+
+
+\mlruk{#5}{#4}
+
+\end{center}
+
+\newpage
+}
+
+
+\begin{document}
+
+%\dip{5}{призёра}{Илья Романенков}{}{}
+
+\input{list.tex}
+
+\end{document}
